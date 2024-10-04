@@ -1,0 +1,57 @@
+/* Basic styles for the Accordion component */
+.Accordion {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.Accordion .question {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.Accordion button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Accordion button:hover {
+  background-color: #2980b9;
+}
+
+.Accordion button:focus {
+  transform: scale(1.05);
+}
+
+.Accordion h1 {
+  margin: 0;
+  padding: 15px;
+  font-size: 22px;
+  color: #333;
+}
+
+p {
+  margin: 0;
+  padding: 15px;
+  font-size: 16px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  /* display: none;  */
+}
+
+/* Show the answer when the accordion is open */
+.Accordion.open p {
+  display: block;
+}

@@ -8,6 +8,9 @@ const Ui = ({curElem}) => {
  }
   return (
    <>
+   <h1>
+    hello acc
+   </h1>
    <div className='Accordion'>
     <div className='question'></div>
     <button onClick={showhide}>{ data ? '-' : '+'} </button>
@@ -15,6 +18,7 @@ const Ui = ({curElem}) => {
    </div>
 
    <p>{  data ? curElem.answer : ""}</p>
+   
    </>
   )
 }
